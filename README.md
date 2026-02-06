@@ -4,161 +4,63 @@
 
 # Agentic Software Team
 
-> An agent-based AI software team that works like a real software company.
+> A governance-first, agent-based AI framework that works like a real software company.
 
 ---
 
 ## 🌍 What is this?
 
 **Agentic Software Team** is a framework for building software products using
-multiple specialized AI agents that collaborate like a real-world software team.
+multiple specialized AI agents that collaborate like a real-world software organization.
 
-Instead of relying on a single AI prompt, this project defines **clear roles,
-responsibilities, boundaries, and workflows** for each agent involved in:
-
-- Product planning
-- UX & UI design
-- Backend & frontend development
-- Quality assurance
-- Marketing & growth
-- Final review and audit
-
-This repository provides the **organizational brain** of an AI-driven software company.
-
----
-
-## 🎯 Why this exists
-
-Most AI-based development fails because:
-
-- Roles are unclear
-- Scope grows uncontrollably
-- Decisions contradict each other
-- Quality and business goals are disconnected
-
-This project solves that by:
-
-- Separating concerns into explicit AI roles
-- Enforcing responsibility boundaries
-- Creating a predictable execution order
-- Making outputs reviewable and auditable
-
----
-
-## 👤 Who is this for?
-
-- Solo developers building serious products with AI
-- Technical founders validating SaaS ideas
-- Teams experimenting with agent-based workflows
-- Anyone tired of chaotic, prompt-only AI development
+Instead of relying on a single prompt or autonomous agent, this project defines
+**clear roles, responsibilities, authority boundaries, and execution workflows**
+for each stage of software development.
 
 ---
 
 ## 🧠 How it works (High Level)
 
-1. A product idea is introduced
-2. The **Team Lead Agent** breaks it down
-3. The **CTO Agent** defines technical direction
-4. **UX & UI Agents** shape the experience
-5. **Backend & Frontend Agents** define implementation
-6. **QA Agent** hunts for bugs and risks
-7. **Marketing & Ads Agents** plan go-to-market
-8. **Review & Audit Agent** validates readiness
+```mermaid
+flowchart TD
+    Idea[Product Idea]
+    TL[Team Lead]
+    CTO[CTO]
+    UX[UX Designer]
+    UI[UI Designer]
+    BE[Backend Developer]
+    FE[Frontend Developer]
+    QA[QA / Bug Hunter]
+    MKT[Marketing Strategist]
+    ADS[Ads & Growth]
+    AUDIT[Review & Audit]
 
-Each agent has:
+    Idea --> TL --> CTO
+    CTO --> UX --> UI
+    UI --> BE --> FE
+    FE --> QA --> MKT --> ADS --> AUDIT
+```
 
-- A strict role definition
-- Clear inputs and outputs
-- Explicit “must not do” rules
--
-
-Idea
- ↓
-Team Lead
- ↓
-CTO
- ↓
-UX → UI
- ↓
-Backend → Frontend
- ↓
-QA
- ↓
-Marketing → Ads
- ↓
-Review & Audit
-
----
-
-## 👥 Agent Roles
-
-| Area | Agents |
-|----|----|
-| Leadership | Team Lead, CTO |
-| Product & Design | UX Designer, UI Designer |
-| Engineering | Backend Developer, Frontend Developer |
-| Quality | QA / Bug Hunter |
-| Growth | Marketing Strategist, Ads & Growth |
-| Control | Review & Audit |
-
-All agent specifications are located in the `/agents` directory.
-
----
-
-## 🧩 How to use this repository
-
-You can use this framework with:
-
-- ChatGPT
-- Cursor
-- Antigravity
-- Any LLM that follows system instructions
-
-### Basic usage flow
-
-1. Read the agent role definitions
-2. Start with **Team Lead Agent**
-3. Follow the execution order
-4. Pass outputs between agents
-5. Finish with **Review & Audit Agent**
-
-This repository does not lock you into a tool.
-It defines **how thinking and execution should be structured**.
-
----
-
-## 📂 Repository Structure
-
-agents/        # AI role definitions
-rules/         # Global rules and governance (coming next)
-workflows/     # Execution flows between agents (coming next)
-prompts/       # Reusable prompt templates (coming next)
-examples/      # Example projects and outputs
-docs/          # Extended documentation
+This diagram represents the **governed execution flow**.
+Each step produces reviewable artifacts before moving forward.
 
 ---
 
 ## 🔐 Governance & Safety
 
-Agentic Software Team is designed with **control and accountability** in mind.
-
-This framework explicitly avoids blind automation.
+Agentic Software Team avoids blind automation.
+Final decisions always pass through **Review & Audit** and human checkpoints.
 
 ---
 
-### Key principles
+## 📂 Repository Structure
 
-- Clear role boundaries between agents
-- Human-in-the-loop checkpoints for critical decisions
-- Explicit escalation paths when uncertainty or conflict arises
-- No silent overrides or hidden assumptions
-- Final authority always rests with a Review & Audit layer (and humans)
-
-Multi-agent systems are powerful, but only when **governed**.
-This project treats safety, traceability, and decision ownership
-as first-class design concerns.
-
-See:
-
-- `/rules/agent-governance.md`
-- `/docs/agent-communication-model.md`
+```text
+agents/        # AI role definitions
+rules/         # Governance and control rules
+workflows/     # Agent execution flows
+prompts/       # Reusable prompt templates
+examples/      # Example projects and outputs
+docs/          # Extended documentation
+decisions/     # Architecture and decision logs
+```
