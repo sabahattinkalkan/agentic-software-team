@@ -1,3 +1,7 @@
+![License](https://img.shields.io/badge/license-AGPL--3.0-blue)
+![AI](https://img.shields.io/badge/AI-Agentic-blueviolet)
+![Status](https://img.shields.io/badge/status-V1%20Stable-green)
+
 # Agentic Software Team
 
 > An agent-based AI software team that works like a real software company.
@@ -41,6 +45,15 @@ This project solves that by:
 
 ---
 
+## 👤 Who is this for?
+
+- Solo developers building serious products with AI
+- Technical founders validating SaaS ideas
+- Teams experimenting with agent-based workflows
+- Anyone tired of chaotic, prompt-only AI development
+
+---
+
 ## 🧠 How it works (High Level)
 
 1. A product idea is introduced
@@ -57,6 +70,22 @@ Each agent has:
 - A strict role definition
 - Clear inputs and outputs
 - Explicit “must not do” rules
+- 
+Idea
+ ↓
+Team Lead
+ ↓
+CTO
+ ↓
+UX → UI
+ ↓
+Backend → Frontend
+ ↓
+QA
+ ↓
+Marketing → Ads
+ ↓
+Review & Audit
 
 ---
 
