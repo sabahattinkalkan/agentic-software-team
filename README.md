@@ -129,7 +129,6 @@ It defines **how thinking and execution should be structured**.
 
 ## 📂 Repository Structure
 
-```text
 agents/        # AI role definitions
 rules/         # Global rules and governance (coming next)
 workflows/     # Execution flows between agents (coming next)
@@ -147,7 +146,7 @@ This framework explicitly avoids blind automation.
 
 ---
 
-### Key principles:
+### Key principles
 
 - Clear role boundaries between agents
 - Human-in-the-loop checkpoints for critical decisions
@@ -160,5 +159,6 @@ This project treats safety, traceability, and decision ownership
 as first-class design concerns.
 
 See:
+
 - `/rules/agent-governance.md`
 - `/docs/agent-communication-model.md`
