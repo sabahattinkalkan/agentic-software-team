@@ -70,7 +70,8 @@ Each agent has:
 - A strict role definition
 - Clear inputs and outputs
 - Explicit “must not do” rules
-- 
+-
+
 Idea
  ↓
 Team Lead
@@ -135,3 +136,25 @@ workflows/     # Execution flows between agents (coming next)
 prompts/       # Reusable prompt templates (coming next)
 examples/      # Example projects and outputs
 docs/          # Extended documentation
+
+## 🔐 Governance & Safety
+
+Agentic Software Team is designed with **control and accountability** in mind.
+
+This framework explicitly avoids blind automation.
+
+### Key principles:
+
+- Clear role boundaries between agents
+- Human-in-the-loop checkpoints for critical decisions
+- Explicit escalation paths when uncertainty or conflict arises
+- No silent overrides or hidden assumptions
+- Final authority always rests with a Review & Audit layer (and humans)
+
+Multi-agent systems are powerful, but only when **governed**.
+This project treats safety, traceability, and decision ownership
+as first-class design concerns.
+
+See:
+- `/rules/agent-governance.md`
+- `/docs/agent-communication-model.md`
