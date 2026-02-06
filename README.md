@@ -46,6 +46,29 @@ the goal is **correct, explainable, and production-grade output**.
 
 ---
 
+## 🚀 Quick Start (No Setup Required)
+
+This project does **not** require installation, deployment, or configuration.
+
+Agentic Software Team is a **thinking and execution framework**, not a runtime tool.
+
+### How to use it
+
+1. Choose any LLM tool (ChatGPT, Cursor, Antigravity, etc.)
+2. Open the role definition of the **Team Lead Agent**
+3. Introduce your product idea
+4. Follow the defined agent execution order
+5. Pass outputs between agents as structured artifacts
+6. Finish with the **Review & Audit Agent**
+
+No servers.  
+No bots.  
+No automation required.
+
+Automation and tooling are intentionally deferred to future versions.
+
+---
+
 ## 👤 Who is this for?
 
 - Solo developers building serious products with AI
@@ -133,7 +156,6 @@ You can use it with:
 5. Finish with the **Review & Audit Agent**
 
 This repository does **not** provide:
-
 - a chatbot
 - an automation engine
 - a runtime platform
@@ -171,13 +193,11 @@ Relevant documents:
 Agents do **not** maintain persistent internal memory.
 
 Instead:
-
 - State is externalized as explicit artifacts
 - Decisions are logged in version control
 - Rationale remains visible and auditable
 
 This design:
-
 - Prevents hallucination persistence
 - Enables deterministic execution
 - Makes debugging and review possible
