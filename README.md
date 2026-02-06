@@ -137,11 +137,15 @@ prompts/       # Reusable prompt templates (coming next)
 examples/      # Example projects and outputs
 docs/          # Extended documentation
 
+---
+
 ## 🔐 Governance & Safety
 
 Agentic Software Team is designed with **control and accountability** in mind.
 
 This framework explicitly avoids blind automation.
+
+---
 
 ### Key principles:
 
